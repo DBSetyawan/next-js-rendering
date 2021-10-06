@@ -9,23 +9,31 @@ export function Header() {
 
 	return (
 		<header className="header">
+		{ !session &&(
+			<>
+				Masuk terlebih dahulu, untuk informasi lebih lanjut!
+				<button className="btn btn__primary btn__icon"
+				onClick={signIn}>Masuk</button>
+			</>
+		)}
 		{session && (
 			<>
-				Signed in as {session.user.email} <br />
-				<button onClick={signOut}>Sign out</button>
+				Username anda : {session.user.email} <br />
+				<button className="btn btn__danger btn__icon" onClick={signOut}>Sign out</button>
+				<h1 className="header__h1">
+					Input data <span>Karyawan</span>
+				</h1>
+				<button
+					className="btn btn__primary btn__icon"
+					onClick={() => {
+						dispatch(setModalOpen(true));
+					}}
+				>
+				<PersonAddSVG /> <span>Tambah baru</span>
+			</button>
 			</>
 		  )}
-			<h1 className="header__h1">
-				Input data <span>Karyawan</span>
-			</h1>
-			<button
-				className="btn btn__primary btn__icon"
-				onClick={() => {
-					dispatch(setModalOpen(true));
-				}}
-			>
-				<PersonAddSVG /> <span>Add new</span>
-			</button>
+		
 		</header>
 	);
 }

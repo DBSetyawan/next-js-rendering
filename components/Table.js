@@ -21,11 +21,11 @@ export function Table() {
 		<table className="table">
 			<thead className="table__head">
 				<tr>
-					<th>Full name</th>
+					<th>Nama lengkap</th>
 					<th>Email</th>
-					<th>Address</th>
-					<th>Phone</th>
-					<th>Actions</th>
+					<th>Alamat</th>
+					<th>No. HP</th>
+					<th>Aksi</th>
 				</tr>
 			</thead>
 

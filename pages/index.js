@@ -1,5 +1,5 @@
 import { Header, Layout, Modal, Pagination, Table } from "@/components";
-import { signIn, signOut, useSession } from 'next-auth/client'
+import { signIn, useSession } from 'next-auth/client'
 
 export default function Page() {
 	const [session, loading] = useSession()
@@ -10,16 +10,13 @@ export default function Page() {
 
 	return (
 		<>
-			{!session && (
-				<>
-				<Layout>
-					<p> anda belum masuk, login terlebih dahulu</p>
-						<Header />
-				<button onClick={signIn}>Sign in</button>
-
-					</Layout>
-				</>
-			)}
+		{!session && (
+			<>
+			  <Layout>
+					<Header />
+				</Layout>
+			</>
+		)}
 		{session && (
 			<Layout>
 				<Header />
