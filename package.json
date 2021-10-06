@@ -28,6 +28,7 @@
 		"mongodb": "^3.6.2",
 		"mongoose": "^5.10.7",
 		"next": "^9.5.3",
+		"next-auth": "^3.29.0",
 		"next-redux-wrapper": "^6.0.2",
 		"prop-types": "^15.7.2",
 		"react": "^16.13.1",
