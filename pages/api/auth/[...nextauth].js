@@ -31,10 +31,10 @@ const options = {
     },
     callbacks: {
       redirect: async (url, baseUrl) => {
-        if (url === 'https://next-js-development.netlify.app/api/auth/signin') {
+        if (url === '/api/auth/signin') {
           return Promise.resolve('/')
         }
-        return Promise.resolve('https://next-js-development.netlify.app/api/auth/signin')
+        return Promise.resolve('/api/auth/signin')
       },
     },
   }
