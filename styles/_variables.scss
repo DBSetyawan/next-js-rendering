@@ -21,3 +21,11 @@ $shadow-sm: 0 1px 4px -2px $color-shadow;
 $shadow-nm: 0 2px 12px -4px $color-shadow;
 $shadow-md: 0 4px 12px -4px $color-shadow;
 $shadow-lg: 0 8px 16px -6px $color-shadow;
+/* ==========================================================================
+   Z-index
+   ========================================================================== */
+
+   :root {
+    /* ... */
+    --z-index-splash-screen: 1000;
+}

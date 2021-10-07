@@ -3,3 +3,4 @@ export * from "./Header";
 export * from "./Table";
 export * from "./Pagination";
 export * from "./Modal";
+export * from "./Loading";

@@ -7,7 +7,6 @@ export default function Dashboard({ user }) {
       <p>Welcome {user.email}</p>
     </div>
   )
-}
 
 export async function getServerSideProps(ctx) {
   const session = await getSession(ctx)
@@ -24,3 +23,4 @@ export async function getServerSideProps(ctx) {
       user: session.user,
     },
   }
+}

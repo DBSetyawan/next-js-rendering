@@ -1,11 +1,13 @@
 import { Header, Layout, Modal, Pagination, Table } from "@/components";
 import { signIn, useSession } from 'next-auth/client'
+import Loading from "../components/Loading";
 
 export default function Page() {
 	const [session, loading] = useSession()
-  
+	
+	
 	if (loading) {
-	  return <p>Loading...</p>
+		return <Loading loading={loading} />  
 	}
 
 	return (
