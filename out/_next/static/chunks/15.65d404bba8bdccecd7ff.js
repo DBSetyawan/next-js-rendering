@@ -1,0 +1,1 @@
+(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[15],{"4uNe":function(n,t,u){"use strict";u.r(t),u.d(t,"default",(function(){return o}));var e=u("q1tI"),i=u.n(e),a=u("nGE6"),r=i.a.createElement;function o(n){var t=n.user;return r("div",null,r("p",null,"You are authenticated ",t.email),r("button",{onClick:a.signOut},"Sign Out"))}}}]);

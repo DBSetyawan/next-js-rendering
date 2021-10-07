@@ -1,1 +1,0 @@
-(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[17],{uGel:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return c}));var u=e("q1tI"),i=e.n(u),o=e("nGE6"),a=i.a.createElement;function c(){return a("div",null,a("p",null,"You are not authenticated"),a("button",{onClick:o.signIn},"Sign In"))}}}]);
