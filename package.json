@@ -7,11 +7,12 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "next build && next export",
 		"start": "next start",
 		"lint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
 		"lint:fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\"",
-		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,json,md}\""
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,json,md}\"",
+		"export": "npm run build && next export -o _static"
 	},
 	"husky": {
 		"hooks": {

@@ -20,7 +20,7 @@ export function Layout({ children }) {
 					`}
 			/>
 			<Head>
-				<title>Live | Input data karyawan</title>
+				<title>Daniel development Next.JS</title>
 			</Head>
 				<Nav>
 					<Link href="/" passHref>
